@@ -1,0 +1,28 @@
+### Add Student (POST)
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "jonny Pappa",
+  "dateOfBirth": "1990-01-01",
+  "joiningDate": "2024-05-01",
+  "className": "Class A"
+}
+
+### Get Student by ID (GET)
+GET http://localhost:8080/students/1
+
+### Get Student by Name (GET)
+GET http://localhost:8080/students/name/John%20Doe
+
+### Update Student (PUT)
+PUT http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Name",
+  "dateOfBirth": "1990-01-01",
+  "joiningDate": "2024-05-01",
+  "className": "Class B"
+}
